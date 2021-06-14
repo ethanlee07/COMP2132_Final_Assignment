@@ -1,0 +1,12 @@
+body {
+  background-image: url("../images/dice-wallpaper.jpg");
+  background-color: black;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+#gameTitle {
+  color: skyblue;
+  font-size: 6em;
+  text-align: center;
+}
