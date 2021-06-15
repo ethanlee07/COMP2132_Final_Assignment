@@ -4,9 +4,52 @@ body{
     background-size: auto;
     background-repeat: no-repeat;
 }
-
 #gameTitle{
     color: skyblue;
     font-size: 6em;
     text-align: center;
+}
+
+#gameSection{
+    height: auto;
+    width: auto;
+}
+
+.playerSection{
+    background-color: lightblue;
+    left: 0;
+    height: 50%;
+    width: 40%;
+    position: fixed;
+    z-index: 1;
+    top: 5;
+    overflow-x: hidden;
+}
+
+.cpuSection{
+    background-color: lightcoral;
+    right: 0;
+    height: 50%;
+    width: 40%;
+    position: fixed;
+    z-index: 1;
+    top: 5;
+    overflow-x: hidden;
+}
+
+#gamesRule{
+    width: 1000px;
+    position: fixed;
+}
+
+#ruleTitle{
+    color: skyblue;
+    font-size: 2em;
+    text-align: center;
+}
+
+p{
+    color: skyblue;
+    text-align: center;
+    padding: 10px;
 }
