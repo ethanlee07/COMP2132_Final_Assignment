@@ -5,6 +5,17 @@ body {
   background-repeat: no-repeat;
 }
 
+p {
+  font-size: 18px;
+  color: skyblue;
+  text-align: center;
+  padding: 10px;
+}
+
+div {
+  text-align: center;
+}
+
 #gameTitle {
   color: skyblue;
   font-size: 6em;
@@ -38,7 +49,65 @@ body {
   overflow-x: hidden;
 }
 
-#gamesRule {
+#playerScore {
+  font-size: 4em;
+  text-align: center;
+}
+
+#cpuScore {
+  font-size: 4em;
+  text-align: center;
+}
+
+.playerDices {
+  position: absolute;
+  top: 40%;
+  left: 41%;
+  margin: -35px 0 0 -35px;
+}
+
+#playersFirstDice {
+  height: 100px;
+  width: 100px;
+}
+
+#playersSecondDice {
+  height: 100px;
+  width: 100px;
+}
+
+.playersDiceBtn {
+  height: 20px;
+  margin: -20px -50px;
+  position: relative;
+  top: 25%;
+}
+
+.cpuDices {
+  position: absolute;
+  top: 40%;
+  left: 41%;
+  margin: -35px 0 0 -35px;
+}
+
+#cpusFirstDice {
+  height: 100px;
+  width: 100px;
+}
+
+#cpusSecondDice {
+  height: 100px;
+  width: 100px;
+}
+
+.cpusDiceBtn {
+  height: 20px;
+  margin: -20px -50px;
+  position: relative;
+  top: 25%;
+}
+
+.gamesRule {
   width: 1000px;
   position: fixed;
 }
@@ -47,10 +116,4 @@ body {
   color: skyblue;
   font-size: 2em;
   text-align: center;
-}
-
-p {
-  color: skyblue;
-  text-align: center;
-  padding: 10px;
 }

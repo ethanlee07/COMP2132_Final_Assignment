@@ -10,29 +10,42 @@
 <body>
     <div>
         <div>
-            <h2 id= gameTitle>Dice Game</h2>
+            <h2 id="gameTitle">Dice Game</h2>
         </div>
         <div id=gameSection>
-            <div class = "playerSection">
+            <div class="playerSection">
+                <div>
+                    <h2 id="playerScore">0</h2>
+                </div>
                 <div class="playerDices">
-                    <img src="../images/dice-1.jpg">
-                    <img src="../images/dice-1.jpg">
+                    <img id="playersFirstDice" src="images/dice-1.jpg">
+                    <img id="playersSecondDice" src="images/dice-1.jpg">
+                </div>
+                <div class="playersDiceBtn">
+                    <button id="playerRollBtn" class="playerRollBtn">Roll Dice</button>
                 </div>
             </div>
-            <div class = "cpuSection">
+            <div class="cpuSection">
+                <div>
+                    <h2 id="cpuScore">0</h2>
+                </div>
                 <div class="cpuDices">
-
+                    <img id="cpusFirstDice" src="images/dice-1.jpg">
+                    <img id="cpusSecondDice" src="images/dice-1.jpg">
+                </div>
+                <div class="cpusDiceBtn">
+                    <button id="cpuRollBtn" class="cpuRollBtn">Roll Dice</button>
                 </div>
             </div>
-            <div id="ruleSection">
-                <div id = "gameRules">
-                    <h3 id="ruleTitle">Rules</h3>
-                        <div id="theRules">
-                            <p>1: Both players will roll a pair dice where their score will be added.</p>
-                            <p>2: If a player rolls a pair the score for that roll is doubled.</p>
-                            <p>3: If one of the pair of the dice rolls one the score will equal to 0.</p>
-                        </div>
-                </div>
+        </div>
+        <div class="ruleSection">
+            <div class="gameRules">
+                <h3 id="ruleTitle">Rules</h3>
+                    <div class="theRules">
+                        <p>1: Both players will roll a pair dice where their score will be added.</p>
+                        <p>2: If a player rolls a pair the score for that roll is doubled.</p>
+                        <p>3: If one of the pair of the dice rolls one the score will equal to 0.</p>
+                    </div>
             </div>
         </div>
     </div>
