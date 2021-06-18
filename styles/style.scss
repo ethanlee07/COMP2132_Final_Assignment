@@ -5,8 +5,130 @@ body{
     background-repeat: no-repeat;
 }
 
+p{
+    font-size: 18px;
+    color: skyblue;
+    text-align: center;
+    padding: 10px;
+}
+
+div{
+    text-align: center;
+}
+
 #gameTitle{
     color: skyblue;
     font-size: 6em;
+    text-align: center;
+}
+
+#gameSection{
+    height: auto;
+    width: auto;
+}
+
+.playerSection{
+    background-color: lightblue;
+    left: 0;
+    height: 50%;
+    width: 37%;
+    position: fixed;
+    z-index: 1;
+    top: 5;
+    overflow-x: hidden;
+}
+
+.cpuSection{
+    background-color: lightcoral;
+    right: 0;
+    height: 50%;
+    width: 37%;
+    position: fixed;
+    z-index: 1;
+    top: 5;
+    overflow-x: hidden;
+}
+
+#playerScore{
+    font-size: 4em;
+    text-align: center;
+}
+
+#cpuScore{
+    font-size: 4em;
+    text-align: center;
+}
+
+.playerDices{
+    position: absolute;
+    top: 40%;
+    left: 41%;
+    margin: -35px 0 0 -35px;
+}
+#playersFirstDice{
+    height: 100px;
+    width: 100px;
+}
+
+#playersSecondDice{
+    height: 100px;
+    width: 100px;
+}
+
+.playersDiceBtn{
+    height: 20px;
+    margin: -20px -50px;
+    position:relative;
+    top: 25%; 
+}
+
+.cpuDices{
+    position: absolute;
+    top: 40%;
+    left: 41%;
+    margin: -35px 0 0 -35px;
+}
+
+#cpusFirstDice{  
+    height: 100px;
+    width: 100px;
+}
+
+#cpusSecondDice{
+    height: 100px;
+    width: 100px;
+}
+
+.cpusDiceBtn{
+    height: 20px;
+    margin: -20px -50px;
+    position:relative;
+    top: 25%; 
+}
+// #playerBtnRoll{
+//     margin: 0;
+//     position: absolute;
+//     top: 50%;
+//     -ms-transform: translateY(-50%);
+//     transform: translateY(-50%);
+// }
+
+// #cpuBtnRoll{
+//     margin: 0;
+//     position: absolute;
+//     top: 50%;
+//     -ms-transform: translateY(-50%);
+//     transform: translateY(-50%);
+// }
+
+.gamesRule{
+    
+    width: 1000px;
+    position: fixed;
+}
+
+#ruleTitle{
+    color: skyblue;
+    font-size: 2em;
     text-align: center;
 }
