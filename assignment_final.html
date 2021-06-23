@@ -22,10 +22,14 @@
                     <img id="playersFirstDice" src="images/dice-1.jpg">
                     <img id="playersSecondDice" src="images/dice-1.jpg">
                 </div>
+                <div>
+                    <p id="playerRoundScore">Round Score: 0</p>
+                </div>
             </div>
             <div class="cpuSection">
                 <div>
                     <h2 id="cpuScore">0</h2>
+                    <p id="cpuRoundScore">Round Score: 0</p>
                 </div>
                 <div class="cpuDices">
                     <img id="cpusFirstDice" src="images/dice-1.jpg">
@@ -43,15 +47,17 @@
                     </div>
                     <div class="rollDiceBtn">
                         <button id="rollBtn" class="rollBtn rollBtn1">Roll Dice</button>
+                        <button id="resetBtn" class="resetBtn resetBtn1">Reset</button>
                     </div>
-                    <div id="popUp" style="opacity: 0;">
+                    <section id="popUp" style="opacity: 0;">
                         <div>
-                            <button id="btnClose">X</button>
-                        </div>  
+                            <button id="btnClose">x</button>
+                        </div>
+                        <div id="gameStatus"></div>  
                         <div>
                             <button id="playAgainBtn">Play Again</button>
                         </div>
-                    </div>
+                    </section>
             </div>
         </main>
         </div>
