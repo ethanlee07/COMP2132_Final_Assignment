@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div>
+    <div class="wrapper">
         <div>
             <h2 id="gameTitle">Dice Game</h2>
         </div>
+        <main>
         <div id=gameSection>
             <div class="playerSection">
                 <div>
@@ -21,20 +22,18 @@
                     <img id="playersFirstDice" src="images/dice-1.jpg">
                     <img id="playersSecondDice" src="images/dice-1.jpg">
                 </div>
-                <div class="playersDiceBtn">
-                    <button id="playerRollBtn" class="playerRollBtn">Roll Dice</button>
+                <div>
+                    <p id="playerRoundScore">Round Score: 0</p>
                 </div>
             </div>
             <div class="cpuSection">
                 <div>
                     <h2 id="cpuScore">0</h2>
+                    <p id="cpuRoundScore">Round Score: 0</p>
                 </div>
                 <div class="cpuDices">
                     <img id="cpusFirstDice" src="images/dice-1.jpg">
                     <img id="cpusSecondDice" src="images/dice-1.jpg">
-                </div>
-                <div class="cpusDiceBtn">
-                    <button id="cpuRollBtn" class="cpuRollBtn">Roll Dice</button>
                 </div>
             </div>
         </div>
@@ -46,9 +45,23 @@
                         <p>2: If a player rolls a pair the score for that roll is doubled.</p>
                         <p>3: If one of the pair of the dice rolls one the score will equal to 0.</p>
                     </div>
+                    <div class="rollDiceBtn">
+                        <button id="rollBtn" class="rollBtn rollBtn1">Roll Dice</button>
+                        <button id="resetBtn" class="resetBtn resetBtn1">Reset</button>
+                    </div>
+                    <section id="popUp" style="opacity: 0;">
+                        <div>
+                            <button id="btnClose">x</button>
+                        </div>
+                        <div id="gameStatus"></div>  
+                        <div>
+                            <button id="playAgainBtn">Play Again</button>
+                        </div>
+                    </section>
             </div>
+        </main>
         </div>
     </div>
-    <!-- <script src="/scripts/assignment_final.js"></script> -->
+    <script src="scripts/assignment_final.js"></script>
 </body>
 </html>
